@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Fasthand&family=Nabla&family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Faster+One&family=Fasthand&family=Nabla&family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Faster+One&family=Fasthand&family=Nabla&family=Poiret+One&family=Zen+Dots&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.804);
+}
+
+h1 {
+    font-family: 'Nabla', cursive;
+    font-size: 10vmin;
+    letter-spacing: 10px;
+    margin-top: 1vmin;
+    
+
+}
+
+h2 {
+    font-family: 'Faster One', cursive;
+    color:rgb(0, 0, 0);
+    font-size: 5vmin;
+    margin-top: -10vmin;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-shadow: rgba(255, 255, 255, 0.324) 2px 5px;
+
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Zen Dots', cursive;
+    
+}
+h3, h4 {
+    display: inline-block;
+    vertical-align: middle;
+    color: azure;
+}
+h3 {
+    margin-right: auto;
+    float: left; 
+}
+h4 {
+    margin-left: auto;
+    float: right;
+
+} 
+
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(4, 10vmin);
+    grid-template-rows: repeat(3, 10vmin);
+    gap: 10vmin;
+    margin-top: -1vmin;
+    grid-row-gap: 12vmin;
+   
+}
+.flip-card {
+    display: grid;
+    height: 20vmin;
+    width: 15vmin;
+    border-radius: 10%;
+    margin-bottom: -5vmin;
+    perspective: 1000px; 
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+ .facedown, .faceup  {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+
+  
+.faceup {
+    display: grid;
+    border: .01vmin solid rgb(253, 249, 249);
+    height: 20vmin;
+    width: 15vmin;
+    border-radius: 10%;
+    margin-bottom: -5vmin;
+    transform: rotateY(180deg)
+}
+
+.facedown {
+    display: grid;
+    border: .01vmin solid rgb(253, 249, 249);
+    height: 20vmin;
+    width: 15vmin;
+    border-radius: 10%;
+    margin-bottom: -5vmin;
+    
+
+}
+
+.facedown :hover {
+    transform: scale(1.1);
+
+}
+button {
+    height: 20vmin;
+    width: 10vmin;
+    border-radius: 10%;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 161, 49);
+    margin-top: 12vmin;
+    font-family: 'Zen Dots', cursive;
+
+}
+
+img {
+    display: grid;
+    border: .01vmin solid rgb(234, 237, 230);
+    height: 20vmin;
+    width: 15vmin;
+    border-radius: 10%;
+}
