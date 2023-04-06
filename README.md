@@ -28,3 +28,22 @@ Game will have message appear after all 6 pairs have been macthed displaying `Yo
 ### Set-up
 - Use HTML & CSS to set up card game
 - 4x3 rows set up with imported images # Concentration-Game
+
+    // function renderBoard() {
+    //     board
+    // }
+    
+    // const facedownArr = [...facedownEls]
+    // const faceupArr = [...faceupEls]
+    // const value1 = faceupArr
+    // const value = facedownArr
+    // const shuffle = (array) => {
+    // for (let i = array.length - 1; i > 0; i--) {
+    //     const j = Math.floor(Math.random() * (i + 1));
+    //     const temp = array[i];
+    //     array[i] = array[j];
+    //     array[j] = temp;
+    // }
+    // return array;
+     
+// }

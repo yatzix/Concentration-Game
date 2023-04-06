@@ -2,9 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Faster+One&family=Fasthand&family=Nabla&family=Poiret+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Faster+One&family=Fasthand&family=Nabla&family=Poiret+One&family=Zen+Dots&display=swap');
 
-* {
-    box-sizing: border-box;
-}
+
 
 body {
     
@@ -43,8 +41,9 @@ h2 {
     align-items: center;
     font-family: 'Zen Dots', cursive;
     
+    
 }
-h3, h4 {
+h3, h4, h5{
     display: inline-block;
     vertical-align: middle;
     color: azure;
@@ -58,6 +57,12 @@ h4 {
     float: right;
 
 } 
+
+h5 {
+    margin-left: auto;
+    float: right; 
+    
+}
 
 
 #board {
@@ -87,15 +92,15 @@ h4 {
     transform-style: preserve-3d;
   }
 
-  .flip-card:hover .flip-card-inner {
+  /* .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
-  }
+  }  */
 
  .facedown, .faceup  {
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
+    
     backface-visibility: hidden;
   }
 
@@ -126,9 +131,9 @@ h4 {
 
 }
 button {
-    height: 20vmin;
-    width: 10vmin;
-    border-radius: 10%;
+    height: 10vmin;
+    width: 20vmin;
+    border-radius: 15%;
     color: rgb(0, 0, 0);
     background-color: rgb(255, 161, 49);
     margin-top: 12vmin;
@@ -142,4 +147,52 @@ img {
     height: 20vmin;
     width: 15vmin;
     border-radius: 10%;
+}
+
+.matched {
+    transform: rotateY(180deg);
+    pointer-events: none;
+}
+
+.instructions {
+    display: none;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(215, 219, 156);
+    height: 20vmin;
+    width: 30vmin;
+    border: 1vmin solid rgb(12, 12, 12);
+    border-radius: 10%;
+    text-align: center ;
+    font-family: 'Zen Dots', cursive;
+    font-size: x-large;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    
+    
+}
+
+h7 {
+    display: none;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(215, 219, 156);
+    height: 20vmin;
+    width: 30vmin;
+    border: 1vmin solid rgb(12, 12, 12);
+    border-radius: 10%;
+    text-align: center ;
+    font-family: 'Zen Dots', cursive;
+    font-size: x-large;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+
 }
