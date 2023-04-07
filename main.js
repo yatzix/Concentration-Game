@@ -6,7 +6,6 @@ const cards = document.querySelectorAll(".flip-card");
 const playAgainBtn = document.querySelector(".button");
 const instrMessage = document.querySelector(".instructions");
 const winningMes = document.getElementById("winner");
-/*----- constants -----*/
 
 /*----- state variables -----*/
 let time;

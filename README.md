@@ -1,5 +1,5 @@
 <h1>Concentration Game <br> 
-Food Frezy</h1>
+Food Frenzy</h1>
 
 ### Getting Started 
 https://yatzix.github.io/Concentration-Game/
