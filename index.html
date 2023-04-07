@@ -1,167 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script defer src="main.js"></script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <title>Food Frenzy</title>
-</head>
-<header>
-    <h1> Food Frenzy</h1>
+  </head>
+  <header>
+    <h1>Food Frenzy</h1>
     <h2>A Concentration Game</h2>
     <h3 id="winner"></h3>
     <h4 class="container">Time: <span id="timer">0</span> seconds</h4>
-    <h5 class="container">Flips: <span id="flips">0</span>&nbsp;&nbsp;&nbsp;</h5>
+    <h5 class="container">
+      Flips: <span id="flips">0</span>&nbsp;&nbsp;&nbsp;
+    </h5>
     <h6 class="instructions" onclick="off()"></h6>
-    <div>
-       
-    </div>
-
-    
-</header>
-<body>
+    <div></div>
+  </header>
+  <body>
     <section id="board">
-        <div class="flip-card">
-            <div class="flip-card-inner" data-id="1">
-                <div class="faceup">
-                    <img src="images/Kimchi.png" alt="Kimchi">
-                </div>
-                <div class="facedown"> 
-                <img src="images/FaceDown.png" alt="Facedown card">
-                </div>
-            </div>
-        </div>
-
-        <div class="flip-card">
-            <div class="flip-card-inner" data-id="2">
-                <div class="faceup" >
-                    <img src="images/Meringue.png" alt="Meringue">
-                </div>
-                <div class="facedown"> 
-                    <img src="images/FaceDown.png" alt="Facedown card">
-                </div>
-            </div>
-        </div>
-
-        <div class="flip-card" >
-            <div class="flip-card-inner" data-id="3">
-                <div class="faceup" >
-                    <img src="images/Mochi.png" alt="Mochi">
-
-                </div>
-                <div class="facedown"> 
-                    <img src="images/FaceDown.png" alt="Facedown card">
-                </div>
-            </div>  
-        </div>
-
-        <div class="flip-card">
-            <div class="flip-card-inner" data-id="1">
-              <div class="faceup">
-                <img src="images/Napa Cabbage.png" alt="napa cabbage">
-              </div>
-              <div class="facedown"> 
-                <img src="images/FaceDown.png" alt="Facedown card">
-              </div>
-            </div>
+      <div class="flip-card">
+        <div class="flip-card-inner" data-id="1">
+          <div class="faceup">
+            <img src="images/Kimchi.png" alt="Kimchi" />
           </div>
-          
-
-        <div class="flip-card">
-            <div class="flip-card-inner" data-id="4">
-                <div class="faceup">
-                    <img src="images/Spagetti.png" alt=" Spagetti Noodles">
-
-                </div>
-                <div class="facedown"> 
-                    <img src="images/FaceDown.png" alt="Facedown card">
-                </div>
-            </div>
+          <div class="facedown">
+            <img src="images/FaceDown.png" alt="Facedown card" />
+          </div>
         </div>
+      </div>
 
-        <div class="flip-card">
-            <div class="flip-card-inner" data-id="4">
-                <div class="faceup">
-                    <img src="images/Spagetti Bowl.png" alt="Spagetti">
-
-                </div>
-                <div class="facedown"> 
-                    <img src="images/FaceDown.png" alt="Facedown card">
-                </div>
-            </div>
+      <div class="flip-card">
+        <div class="flip-card-inner" data-id="2">
+          <div class="faceup">
+            <img src="images/Meringue.png" alt="Meringue" />
+          </div>
+          <div class="facedown">
+            <img src="images/FaceDown.png" alt="Facedown card" />
+          </div>
         </div>
+      </div>
 
-        <div class="flip-card">
-            <div class="flip-card-inner" data-id="3">
-                <div class="faceup">
-                    <img src="images/Rice Flour.png" alt="Rice Flour">
-
-                </div>
-                <div class="facedown"> 
-                    <img src="images/FaceDown.png" alt="Facedown card">
-                </div>
-            </div>
+      <div class="flip-card">
+        <div class="flip-card-inner" data-id="3">
+          <div class="faceup">
+            <img src="images/Mochi.png" alt="Mochi" />
+          </div>
+          <div class="facedown">
+            <img src="images/FaceDown.png" alt="Facedown card" />
+          </div>
         </div>
+      </div>
 
-        <div class="flip-card">
-            <div class="flip-card-inner" data-id="5">
-                <div class="faceup"> 
-                <img src="images/Avacado.png" alt="Avacado">
-                </div>
-                <div class="facedown"> 
-                    <img src="images/FaceDown.png" alt="Facedown card">
-                </div>
-            </div>
+      <div class="flip-card">
+        <div class="flip-card-inner" data-id="1">
+          <div class="faceup">
+            <img src="images/Napa Cabbage.png" alt="napa cabbage" />
+          </div>
+          <div class="facedown">
+            <img src="images/FaceDown.png" alt="Facedown card" />
+          </div>
         </div>
+      </div>
 
-        <div class="flip-card">
-            <div class="flip-card-inner" data-id="6">
-                <div class="faceup">
-                    <img src="images/chickpeas.png" alt="Chickpeas">
-                </div>
-                <div class="facedown"> 
-                    <img src="images/FaceDown.png" alt="Facedown card">
-                </div>
-            </div>
+      <div class="flip-card">
+        <div class="flip-card-inner" data-id="4">
+          <div class="faceup">
+            <img src="images/Spagetti.png" alt=" Spagetti Noodles" />
+          </div>
+          <div class="facedown">
+            <img src="images/FaceDown.png" alt="Facedown card" />
+          </div>
         </div>
+      </div>
 
-        <div class="flip-card">
-            <div class="flip-card-inner" data-id="2">
-                <div class="faceup">
-                    <img src="images/Egg Whites.png" alt="Eggwhites">
-                </div>
-                <div class="facedown"> 
-                    <img src="images/FaceDown.png" alt="Facedown card">
-                </div>
-            </div>
+      <div class="flip-card">
+        <div class="flip-card-inner" data-id="4">
+          <div class="faceup">
+            <img src="images/Spagetti Bowl.png" alt="Spagetti" />
+          </div>
+          <div class="facedown">
+            <img src="images/FaceDown.png" alt="Facedown card" />
+          </div>
         </div>
+      </div>
 
-        <div class="flip-card">
-            <div class="flip-card-inner" data-id="5">
-                <div class="faceup">
-                    <img src="images/Guacamole.png" alt="Guacamole">
-                </div>
-                <div class="facedown"> 
-                    <img src="images/FaceDown.png" alt="Facedown card">
-                </div>
-            </div>
+      <div class="flip-card">
+        <div class="flip-card-inner" data-id="3">
+          <div class="faceup">
+            <img src="images/Rice Flour.png" alt="Rice Flour" />
+          </div>
+          <div class="facedown">
+            <img src="images/FaceDown.png" alt="Facedown card" />
+          </div>
         </div>
+      </div>
 
-        <div class="flip-card">
-            <div class="flip-card-inner" data-id="6">
-                <div class="faceup">
-                    <img src="images/hummus.png" alt="Hummus">
-                </div>
-                <div class="facedown"> 
-                    <img src="images/FaceDown.png" alt="Facedown card">
-                </div>
-            </div>
+      <div class="flip-card">
+        <div class="flip-card-inner" data-id="5">
+          <div class="faceup">
+            <img src="images/Avacado.png" alt="Avacado" />
+          </div>
+          <div class="facedown">
+            <img src="images/FaceDown.png" alt="Facedown card" />
+          </div>
         </div>
+      </div>
 
+      <div class="flip-card">
+        <div class="flip-card-inner" data-id="6">
+          <div class="faceup">
+            <img src="images/chickpeas.png" alt="Chickpeas" />
+          </div>
+          <div class="facedown">
+            <img src="images/FaceDown.png" alt="Facedown card" />
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner" data-id="2">
+          <div class="faceup">
+            <img src="images/Egg Whites.png" alt="Eggwhites" />
+          </div>
+          <div class="facedown">
+            <img src="images/FaceDown.png" alt="Facedown card" />
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner" data-id="5">
+          <div class="faceup">
+            <img src="images/Guacamole.png" alt="Guacamole" />
+          </div>
+          <div class="facedown">
+            <img src="images/FaceDown.png" alt="Facedown card" />
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner" data-id="6">
+          <div class="faceup">
+            <img src="images/hummus.png" alt="Hummus" />
+          </div>
+          <div class="facedown">
+            <img src="images/FaceDown.png" alt="Facedown card" />
+          </div>
+        </div>
+      </div>
     </section>
     <button class="button" onclick="on()" onclick="end()">Start Game</button>
-    
-</body>
+  </body>
 </html>
